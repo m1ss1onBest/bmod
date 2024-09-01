@@ -11,14 +11,13 @@ fn main() {
 
     let build_thread = thread::spawn(move || {
         match Command::new("cmd")
-            .args(&["/C", "gradlew", "jar"])
+            .args(["/C", "gradlew", "jar"])
             .current_dir(project_path)
             .status()
         {
             Ok(_) => (),
             Err(err) => {
                 eprintln!("{err}");
-                return;
             }
         }
     });
