@@ -2,7 +2,7 @@ use std::path::PathBuf;
 use std::{fs, thread};
 use std::process::Command;
 
-//probably will never be updated
+//probably will never be updated...
 fn main() {
     let project_path: &str = "C:/.Projects/java/Azaria-Dev";
     let mod_name: &str = "AzariaDesktop.zip";
